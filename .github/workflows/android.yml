@@ -23,17 +23,11 @@ jobs:
     - name: memberikan Perizinan gradlew
       run: chmod +x gradlew
 
-    - name: Varibel name
-      run: t=$(pwd | sed 's/.*\///g')
-
-    - name: Get Name
-      run: echo $t
-
-    - name: Build debug Apk
+    - name: Kompilasi Ke APK-Debug
       run: bash ./gradlew assembleDebug --warning-mode all
 
     - name: Upload Ke dalam Artifact
       uses: actions/upload-artifact@v1
       with:
-          name: Login
+          name: LoginDebug
           path: app/build/outputs/apk/debug/app-debug.apk
