@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <EditText
+            android:background="@drawable/rounded"
+            android:hint="User Name"
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"/>
+        
+        <EditText
+            android:background="@drawable/rounded"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"/>
+        
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Login"/>
+        
+        <TextView
+            android:textColor="#36454F"
+            android:background="@drawable/rounded"
+            android:id="@+id/result"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:text="Silahkan Masukkan Username dan Password"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

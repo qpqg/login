@@ -1,0 +1,13 @@
+
+git config --global --add safe.directory $(pwd)
+git init
+git add README.md
+git commit -m "first commit"
+echo "Remote: "
+read remotes
+git remote add origin $remotes
+git branch -M main
+git push -u origin main
+
+
+
