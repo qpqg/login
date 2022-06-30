@@ -27,6 +27,7 @@ jobs:
       run: bash ./gradlew assembleDebug --warning-mode all
     - name: Varibel name
       run: t=$(pwd | sed 's/.*\///g')
+      run: echo $t
     - name: Upload Ke dalam Artifact
       uses: actions/upload-artifact@v1
       with:
